@@ -24,10 +24,6 @@
 This program uses a neural net to predict the values in images of handwritten, single digit numbers. In the current implementation, images from the MNIST-dataset are used and the prediction is compared to the true value.
 
 ## Usage
-Use docker to run the following image for optimal results:
-```sh
-docker run -it --env="DISPLAY=10.181.36.38:0.0" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --env="XAUTHORITY=/home/boris/.Xauthority" --volume="$XAUTH:/home/boris/.Xauthority" -v "C:\Users\boris\Documents\Studium\8. Semester\KI":"/home/KI" --rm deepprojects/ros-ai:ss21 bash
-```
 Create a catkin workspace and place the program files into its *src* directory.
 Source the ROS setup and run catkin:
 ```sh
