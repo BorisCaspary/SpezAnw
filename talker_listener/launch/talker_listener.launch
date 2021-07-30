@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="talker_listener" name="camera" type="camera.py" />
+	<node pkg="talker_listener" name="processor" type="processor.py" />
+	<node pkg="talker_listener" name="controller" type="controller.py" output="screen"/>
+	<node pkg="talker_listener" name="ai_server" type="ai_server.py" />
+</launch>
